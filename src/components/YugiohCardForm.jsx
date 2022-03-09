@@ -9,6 +9,10 @@ function YugiohCardForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if(!email){
+      alert("EMAIL OBRIGATORIO");
+      return;
+    }
     alert(email, password);
   }
 
